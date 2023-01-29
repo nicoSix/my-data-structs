@@ -21,7 +21,7 @@ class NodeWithPP(Node):
         super().__init__(data)
     
 class LinkedList:
-    """Basic implementation of singly LinkedList for Python
+    """Basic implementation of LinkedList for Python with methods for both singly and doubly LL
     """
     def __init__(self):
         """Creates an empty LinkedList with pointers set to None
@@ -61,6 +61,8 @@ class LinkedList:
             return curr
 
 class SinglyLinkedList(LinkedList):
+    """Basic implementation of singly linked list
+    """
     def __str__(self):
         res = "Size: {}, Nodes: ".format(self.size)
         res += " -> ".join(str(x) for x in self.get_nodes_values_arr())
